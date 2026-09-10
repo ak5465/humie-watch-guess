@@ -1,3 +1,5 @@
+import { EMOTIONS } from '../data/emotions';
+
 export function isClipGuessCorrect(round) {
   if (round.roundType === 'effectToCause') {
     return round.selectedScene?.id === round.correctScene?.id;
@@ -7,9 +9,30 @@ export function isClipGuessCorrect(round) {
 }
 
 export function getRevealMessage(round) {
+  const isCorrect = isClipGuessCorrect(round);
+
+  if (round.roundType === 'causeToEffect') {
+    const targetLabel = EMOTIONS[round.targetEmotion]?.label?.toLowerCase()
+      || round.targetEmotion;
+
+    if (isCorrect) {
+      return {
+        main: `Yes! Humie felt ${targetLabel}.`,
+        sub: null,
+        tone: 'correct',
+      };
+    }
+
+    return {
+      main: `Not quite — Humie actually felt ${targetLabel}.`,
+      sub: "Everyone notices different things — and that's okay.",
+      tone: 'incorrect',
+    };
+  }
+
   const scene = round.correctScene;
 
-  if (isClipGuessCorrect(round)) {
+  if (isCorrect) {
     return {
       main: scene.revealCorrect
         || `That's right! Humie felt ${round.targetEmotion} watching this clip.`,
