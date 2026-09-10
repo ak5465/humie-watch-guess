@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/humie-watch-guess/static/css/main.95bbf094.css",
+    "main.js": "/humie-watch-guess/static/js/main.00161d51.js",
+    "static/js/453.3fe14342.chunk.js": "/humie-watch-guess/static/js/453.3fe14342.chunk.js",
+    "index.html": "/humie-watch-guess/index.html",
+    "main.95bbf094.css.map": "/humie-watch-guess/static/css/main.95bbf094.css.map",
+    "main.00161d51.js.map": "/humie-watch-guess/static/js/main.00161d51.js.map",
+    "453.3fe14342.chunk.js.map": "/humie-watch-guess/static/js/453.3fe14342.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95bbf094.css",
+    "static/js/main.00161d51.js"
+  ]
+}
