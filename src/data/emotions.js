@@ -1,20 +1,22 @@
+import { publicUrl } from '../utils/publicUrl';
+
 export const EMOTIONS = {
   sad: {
     id: 'sad',
     label: 'Sad',
-    img: '/assets/sad.png',
-    humieSprite: '/assets/humieBigSad.png',
+    img: publicUrl('/assets/sad.png'),
+    humieSprite: publicUrl('/assets/humieBigSad.png'),
   },
   happy: {
     id: 'happy',
     label: 'Happy',
-    img: '/assets/veryHappy.png',
-    humieSprite: '/assets/humieBigSmile.png',
+    img: publicUrl('/assets/veryHappy.png'),
+    humieSprite: publicUrl('/assets/humieBigSmile.png'),
   },
   surprised: {
     id: 'surprised',
     label: 'Surprised',
-    img: '/assets/surprised.png',
+    img: publicUrl('/assets/surprised.png'),
     humieSprite: null,
   },
 };

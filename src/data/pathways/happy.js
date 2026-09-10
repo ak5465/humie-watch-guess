@@ -1,3 +1,5 @@
+import { publicUrl } from '../../utils/publicUrl';
+
 export const happyPathwayScenes = [
   {
     id: 'happy-1',
@@ -5,7 +7,7 @@ export const happyPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene1.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene1.svg'),
     reasonOptions: [
       { id: 'won-race', label: 'She won the race' },
       { id: 'fun-day', label: 'She had a fun day outside' },
@@ -18,7 +20,7 @@ export const happyPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene2.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene2.svg'),
     reasonOptions: [
       { id: 'surprise-party', label: 'There was a surprise for her' },
       { id: 'played-together', label: 'She got to play with friends' },
@@ -31,7 +33,7 @@ export const happyPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene3.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene3.svg'),
     reasonOptions: [
       { id: 'kind-word', label: 'Someone said something kind' },
       { id: 'favorite-thing', label: 'She got to do her favorite thing' },

@@ -1,3 +1,5 @@
+import { publicUrl } from '../../utils/publicUrl';
+
 export const surprisedPathwayScenes = [
   {
     id: 'surprised-1',
@@ -5,7 +7,7 @@ export const surprisedPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene1.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene1.svg'),
     reasonOptions: [
       { id: 'big-surprise', label: 'Something surprised her' },
       { id: 'unexpected-guest', label: 'Someone showed up unexpectedly' },
@@ -18,7 +20,7 @@ export const surprisedPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene2.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene2.svg'),
     reasonOptions: [
       { id: 'did-not-expect', label: 'She did not expect that' },
       { id: 'plot-twist', label: 'The story took a turn' },
@@ -31,7 +33,7 @@ export const surprisedPathwayScenes = [
     youtubeId: 'XXXXXXXXXXX',
     startSeconds: 0,
     endSeconds: 15,
-    thumbnail: '/placeholder-thumbs/scene3.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene3.svg'),
     reasonOptions: [
       { id: 'not-invited', label: 'She was not invited to play' },
       { id: 'hidden-thing', label: 'She found something hidden' },

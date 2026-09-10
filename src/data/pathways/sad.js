@@ -1,3 +1,5 @@
+import { publicUrl } from '../../utils/publicUrl';
+
 /**
  * SAD PATHWAY — all clips for when Humie feels sad.
  */
@@ -8,7 +10,7 @@ export const sadPathwayScenes = [
     youtubeId: '4hI7DPS2yNY',
     startSeconds: 141,
     endSeconds: 156,
-    thumbnail: '/placeholder-thumbs/scene1.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene1.svg'),
     revealCorrect: "That's right! Humie felt sad watching this moment.",
     revealIncorrect: "Not quite — and that's okay! Humie was sad about a different moment.",
     reasonOptions: [
@@ -38,7 +40,7 @@ export const sadPathwayScenes = [
     youtubeId: '4hI7DPS2yNY',
     startSeconds: 176,
     endSeconds: 210,
-    thumbnail: '/placeholder-thumbs/scene2.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene2.svg'),
     revealCorrect: "That's right! Humie is sad that Bingo is sad in this video.",
     revealIncorrect: "Not quite — and that's okay! Humie was feeling sad about a different moment in the show.",
     reasonOptions: [
@@ -68,7 +70,7 @@ export const sadPathwayScenes = [
     youtubeId: '4hI7DPS2yNY',
     startSeconds: 359,
     endSeconds: 388,
-    thumbnail: '/placeholder-thumbs/scene3.svg',
+    thumbnail: publicUrl('/placeholder-thumbs/scene3.svg'),
     revealCorrect: "That's right! Humie felt sad watching this part of the show.",
     revealIncorrect: "Not quite — and that's okay! Humie was sad about a different clip.",
     reasonOptions: [
