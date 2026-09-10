@@ -1,0 +1,14 @@
+:root {
+  --humie-bg-top: #C8E8F8;
+  --humie-bg-mid: #A8D4EE;
+  --humie-bg-bottom: #8BBFD8;
+  --humie-blue: #3A7FC1;
+  --humie-blue-dark: #2A4A6A;
+  --humie-blue-muted: #5A80A0;
+  --humie-body: #F38D2C;
+  --humie-accent: #4A7FA5;
+  --humie-surface: #FFFDF5;
+  --humie-shadow: rgba(0, 0, 0, 0.1);
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+}

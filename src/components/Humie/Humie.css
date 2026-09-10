@@ -1,0 +1,144 @@
+.humie-assembled {
+  position: relative;
+  width: clamp(120px, 22vw, 200px);
+  height: clamp(180px, 33vw, 300px);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+  flex-shrink: 0;
+}
+
+.humie-assembled--sm {
+  width: clamp(90px, 18vw, 140px);
+  height: clamp(135px, 27vw, 210px);
+}
+
+.humie-assembled--lg {
+  width: clamp(150px, 26vw, 240px);
+  height: clamp(225px, 39vw, 360px);
+}
+
+.humie-body {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-bottom: -7%;
+}
+
+.humie-left-arm {
+  position: absolute;
+  width: 19%;
+  bottom: 33%;
+  right: 6%;
+  z-index: 1;
+  transform-origin: 50% 8%;
+  animation: leftArmSway 5s ease-in-out infinite;
+}
+
+.humie-right-arm {
+  position: absolute;
+  width: 35%;
+  bottom: 49%;
+  left: -14%;
+  z-index: 3;
+  transform-origin: 85% 92%;
+  animation: rightArmWave 3.5s ease-in-out infinite;
+}
+
+.humie-eyes-open {
+  position: absolute;
+  width: 35%;
+  top: 10%;
+  left: 48%;
+  transform: translateX(-50%);
+  z-index: 4;
+  animation: blink 4s ease-in-out infinite;
+}
+
+.humie-eyes-closed {
+  position: absolute;
+  width: 29%;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  opacity: 0;
+  animation: blinkClosed 4s ease-in-out infinite;
+}
+
+.humie-with-emotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.humie-with-emotion__sprite {
+  width: clamp(120px, 22vw, 200px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+  flex-shrink: 0;
+}
+
+.humie-with-emotion--sm .humie-with-emotion__sprite {
+  width: clamp(90px, 18vw, 140px);
+}
+
+.humie-with-emotion--lg .humie-with-emotion__sprite {
+  width: clamp(150px, 26vw, 240px);
+}
+
+.humie-with-emotion__figure {
+  position: relative;
+}
+
+.humie-with-emotion__overlay {
+  position: absolute;
+  width: 34%;
+  left: 50%;
+  top: 38%;
+  transform: translateX(-50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.humie-with-emotion__label {
+  font-size: clamp(14px, 2.5vw, 18px);
+  font-weight: 700;
+  color: #2A4A6A;
+}
+
+@keyframes rightArmWave {
+  0%, 100% { transform: rotate(2deg); }
+  15% { transform: rotate(-18deg); }
+  30% { transform: rotate(4deg); }
+  45% { transform: rotate(-22deg); }
+  60% { transform: rotate(0deg); }
+  80% { transform: rotate(-10deg); }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  85% { opacity: 1; }
+  87% { opacity: 0; }
+  92% { opacity: 0; }
+  94% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes blinkClosed {
+  0% { opacity: 0; }
+  85% { opacity: 0; }
+  87% { opacity: 1; }
+  92% { opacity: 1; }
+  94% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes leftArmSway {
+  0%, 100% { transform: rotate(8deg); }
+  35% { transform: rotate(-4deg); }
+  65% { transform: rotate(12deg); }
+}
